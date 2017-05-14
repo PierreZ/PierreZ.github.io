@@ -1,0 +1,45 @@
+baseurl = "https://pierrezemb.fr/"
+theme = "cocoa-eh"
+builddrafts = true
+canonifyurls = true
+contentdir = "content"
+languageCode = "en-US"
+layoutdir = "layouts"
+publishdir = "public"
+author = "Pierre Zemb"
+title = "Pierre Zemb"
+disqusshortname = "pierrezemb-fr"
+pluralizelisttitles = false
+
+[permalinks]
+blog = "blog/:slug/"
+
+[params]
+dateform = "Jan 2, 2006"
+dateformfull = "Mon Jan 2 2006 15:04:05 MST"
+description = "My technical blog"
+copyright = "Copyright © 2017 Pierre Zemb"
+logofile = "img/myself.png"
+faviconfile = "img/myself.png"
+highlightjs = true
+progressively = false
+latestpostcount = 5
+github = "PierreZ"
+email = "contact@pierrezemb.fr"
+linkedin = "pierre-zemb-8004125b"
+twitter = "PierreZ"
+social_banner = "img/myself.png"
+posts_navigation = true
+
+[params.colors]
+identifier = "#527fc1f"
+identifier_dark = "#1a3152"
+trivial = "#6a7a8b"
+foreground = "#181d2a"
+background = "#f9f9f9"
+background_dark = "#282a36"
+code = "#87a5d2"
+type = "#97d28b"
+special = "#ffcb8d"
+value = "#96c2d7"
+statement = "#ff8e91"
