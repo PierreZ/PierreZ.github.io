@@ -1,4 +1,4 @@
-baseurl = "https://pierrezemb.fr/"
+baseurl = "https://pierrez.github.io/blog"
 theme = "cocoa-eh"
 builddrafts = true
 canonifyurls = true
