@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Development on Pierre Zemb</title>
-    <link>https://pierrezemb.fr/tags/development/</link>
+    <link>https://pierrez.github.io/blog/tags/development/</link>
     <description>Recent content in Development on Pierre Zemb</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Copyright © 2017 Pierre Zemb</copyright>
     <lastBuildDate>Fri, 13 May 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://pierrezemb.fr/tags/development/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://pierrez.github.io/blog/tags/development/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Event-Driven architecture 101</title>
-      <link>https://pierrezemb.fr/blog/event-driven-architecture-101/</link>
+      <link>https://pierrez.github.io/blog/blog/event-driven-architecture-101/</link>
       <pubDate>Fri, 13 May 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://pierrezemb.fr/blog/event-driven-architecture-101/</guid>
+      <guid>https://pierrez.github.io/blog/blog/event-driven-architecture-101/</guid>
       <description>Event-Driven architecture 101 Do your own cover on http://dev.to/rly
 tl;dr: Queue messaging are cool. Use them at the core of your architecture.
 I’m currently playing a lot around Kafka and Flink at work. I also discovered Vert.x at my local JUG. All three have a common word: events. Event-driven architecture is not something that I learned at school, and I think that’s a shame. It’s really powerful and useful, especially in a world where we speak more and more about “serverless” and “micro services” stuff.</description>
@@ -25,10 +25,10 @@ I’m currently playing a lot around Kafka and Flink at work. I also discovered 
     
     <item>
       <title>Why you really should give Golang a try!</title>
-      <link>https://pierrezemb.fr/blog/why-you-really-should-give-golang-a-try/</link>
+      <link>https://pierrez.github.io/blog/blog/why-you-really-should-give-golang-a-try/</link>
       <pubDate>Sun, 27 Dec 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://pierrezemb.fr/blog/why-you-really-should-give-golang-a-try/</guid>
+      <guid>https://pierrez.github.io/blog/blog/why-you-really-should-give-golang-a-try/</guid>
       <description>As you may or may not know, Golang is a new programming language created by Google. It’s great for writing high-performance, concurrent server applications and tools. With it, you can easily write your own web server to render your static HTML files, or go deeper and create a REST services.
 package main import &amp;quot;fmt&amp;quot; func main() { fmt.Println(&amp;quot;hello world&amp;quot;) }  Go’s Hello World
 Go has many advantages over languages like good-old Java, C++ or add your favorite language here.</description>

@@ -16,7 +16,7 @@
 <meta property="twitter:title" content="Event-Driven architecture 101">
 
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:image" content="https://pierrezemb.fr/img/myself.png">
+    <meta property="twitter:image" content="https://pierrez.github.io/blogimg/myself.png">
 
 <meta property="twitter:description" content="">
 
@@ -26,7 +26,7 @@
      Pierre Zemb - Event-Driven architecture 101 
 
 </title>
-<link rel="canonical" href="https://pierrezemb.fr/blog/event-driven-architecture-101/">
+<link rel="canonical" href="https://pierrez.github.io/blog/blog/event-driven-architecture-101/">
 
 
 <style media="screen">
@@ -954,7 +954,7 @@ section.main .content .markdown pre, section.main .content .markdown pre code {
 
 <link rel="shortcut icon"
 
-    href="https://pierrezemb.fr/img/myself.png"
+    href="https://pierrez.github.io/blog/img/myself.png"
 
 >
 
@@ -970,13 +970,13 @@ section.main .content .markdown pre, section.main .content .markdown pre code {
 <section class="header">
 
     <div class="container">
-        <a href="https://pierrezemb.fr/"><img class="logo" src="https://pierrezemb.fr/img/myself.png" alt="logo" /></a>
+        <a href="https://pierrez.github.io/blog"><img class="logo" src="https://pierrez.github.io/blog/img/myself.png" alt="logo" /></a>
         <div class="content">
-            <a href="https://pierrezemb.fr/"><div class="name"><h1>Pierre Zemb</h1></div></a>
+            <a href="https://pierrez.github.io/blog"><div class="name"><h1>Pierre Zemb</h1></div></a>
             <nav>
                 <ul>
                     
-                        <a href="https://pierrezemb.fr/blog/"><li>Blog</li></a>
+                        <a href="https://pierrez.github.io/blogblog/"><li>Blog</li></a>
                     
                     
                         
@@ -987,13 +987,13 @@ section.main .content .markdown pre, section.main .content .markdown pre code {
                     
                         
                             
-                            <a href="https://pierrezemb.fr/projects"><li>projects</li></a>
+                            <a href="https://pierrez.github.io/blog/projects"><li>projects</li></a>
                             
                         
                     
                     
                         
-                            <a href="https://pierrezemb.fr/about/"><li>About Me</li></a>
+                            <a href="https://pierrez.github.io/blog/about/"><li>About Me</li></a>
                         
                     
                         
@@ -1031,10 +1031,10 @@ section.main .content .markdown pre, section.main .content .markdown pre code {
                         <ul>
                           
                             <div class="middot"></div>
-                            <li><a href="https://pierrezemb.fr/tags/event">event</a> </li>
+                            <li><a href="https://pierrez.github.io/blog/tags/event">event</a> </li>
                           
                             <div class="middot"></div>
-                            <li><a href="https://pierrezemb.fr/tags/development">development</a> </li>
+                            <li><a href="https://pierrez.github.io/blog/tags/development">development</a> </li>
                           
                         </ul>
                     </div>
@@ -1046,7 +1046,7 @@ section.main .content .markdown pre, section.main .content .markdown pre code {
 
 <h1 id="event-driven-architecture-101">Event-Driven architecture 101</h1>
 
-<p><img src="https://pierrezemb.fr/img/event-driven-101/event_1.png" alt="image" /></p>
+<p><img src="https://pierrez.github.io/blog/img/event-driven-101/event_1.png" alt="image" /></p>
 
 <p>Do your own cover on <a href="http://dev.to/rly">http://dev.to/rly</a></p>
 
@@ -1058,7 +1058,7 @@ section.main .content .markdown pre, section.main .content .markdown pre code {
 
 <h1 id="the-unix-philosophy">the Unix philosophy</h1>
 
-<p><img src="https://pierrezemb.fr/img/event-driven-101/event_2.gif" alt="image" /></p>
+<p><img src="https://pierrez.github.io/blog/img/event-driven-101/event_2.gif" alt="image" /></p>
 
 <p>I’m a huge fan of GNU/Linux. I just love my terminal. It’s been difficult at the beginning, but now, I consider myself fluent with it. My favorite feature ? <strong>Pipes or |</strong>. For those who don’t know, it’s the ability to pass the result of the command to another command. For example, to count how many files you have in a folder, you’ll find yourself doing something like this:</p>
 
@@ -1080,17 +1080,17 @@ section.main .content .markdown pre, section.main .content .markdown pre code {
 
 <h1 id="back-in-2016">Back in 2016</h1>
 
-<p><img src="https://pierrezemb.fr/img/event-driven-101/event_3.gif" alt="image" /></p>
+<p><img src="https://pierrez.github.io/blog/img/event-driven-101/event_3.gif" alt="image" /></p>
 
 <p>Cloud changed everything in terms of software engineering. <strong>We can now deploy applications without thinking about the underlying server</strong>. How cool is that? Let’s take some steps back. Now that you can easily deploy a huge application, what can be accomplished? Well, if I can deploy one app with ease, <strong>Why should I deploy only one huge app ?</strong> why can’t I deploy multiples applications instead of one? <strong>Let’s call theses applications micro services</strong> because we are in 2016.</p>
 
-<p><img src="https://pierrezemb.fr/img/event-driven-101/event_4.png" alt="image" /></p>
+<p><img src="https://pierrez.github.io/blog/img/event-driven-101/event_4.png" alt="image" /></p>
 
 <p>OK, so now I’m applying the first rule of the UNIX Philosophy, because I have multiples programs that are doing one job each. But about the second rule? <strong>How can they communicate? How can we simulate UNIX pipes?</strong> Before answering, let’s answer to another question first: <strong>What do we really need to send through our network?</strong> Don’t forget the<a href="https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing"><strong>Fallacies of distributed computing</strong></a><strong>…</strong></p>
 
 <p>Let’s take an example. We are a new startup, and we are building our plateform. We’ll certainly need to handle our customers. Let’s say that for each new customer, <strong>we need to make two actions</strong>: add it to our database, and then to our mailing-list. <strong>A simple and classical way would be to just call two functions</strong> (whether on the same applications or not), and then say to the customer: “You’re successfully registered”. Like this:</p>
 
-<p><img src="https://pierrezemb.fr/img/event-driven-101/event_5.png" alt="image" /></p>
+<p><img src="https://pierrez.github.io/blog/img/event-driven-101/event_5.png" alt="image" /></p>
 
 <p>Is there another approach? Let’s use an <strong>event-based architecture</strong>:</p>
 
@@ -1104,13 +1104,13 @@ section.main .content .markdown pre, section.main .content .markdown pre code {
 
 <p>Well, handling a new customer is a thing that happens (hopefully). For this, we’ll be using a <strong>Queue messaging system or Broker</strong>. It’s a <strong>middleware</strong> that will <strong>receive events, and making them available for another application or groups of applications.</strong></p>
 
-<p><img src="https://pierrezemb.fr/img/event-driven-101/event_6.gif" alt="image" /></p>
+<p><img src="https://pierrez.github.io/blog/img/event-driven-101/event_6.gif" alt="image" /></p>
 
 <p>Queue messaging architecture with 2 producers and 4 consumers</p>
 
 <p>So let’s rethink our architecture. Pay attention to the words: our Register page will <strong>produce</strong> an event that will contains all the information about our client. This event will be <strong>queued</strong>, waiting to be <strong>consumed</strong> by the associated micro services.</p>
 
-<p><img src="https://pierrezemb.fr/img/event-driven-101/event_7.png" alt="image" /></p>
+<p><img src="https://pierrez.github.io/blog/img/event-driven-101/event_7.png" alt="image" /></p>
 
 <p>Simple event-driven architecture</p>
 
@@ -1146,15 +1146,15 @@ section.main .content .markdown pre, section.main .content .markdown pre code {
                 <div class="navigation">
                     
                     <div>
-                        <img class="icon" src="https://pierrezemb.fr/img/back.svg" alt="back" />
-                        <a href="https://pierrezemb.fr/blog/lets-talk-about-containers/">Let&#39;s talk about containers</a>
+                        <img class="icon" src="https://pierrez.github.io/blog/img/back.svg" alt="back" />
+                        <a href="https://pierrez.github.io/blog/blog/lets-talk-about-containers/">Let&#39;s talk about containers</a>
                     </div>
                     
                     <div style="width: 100%;"></div>
                     
                     <div>
-                        <a href="https://pierrezemb.fr/blog/student-no-more/">Student? No more!</a>
-                        <img class="icon" src="https://pierrezemb.fr/img/next.svg" alt="next" />
+                        <a href="https://pierrez.github.io/blog/blog/student-no-more/">Student? No more!</a>
+                        <img class="icon" src="https://pierrez.github.io/blog/img/next.svg" alt="next" />
                     </div>
                     
                 </div>
@@ -1164,9 +1164,9 @@ section.main .content .markdown pre, section.main .content .markdown pre code {
                 <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'pierrezemb-fr';
-    var disqus_identifier = 'https:\/\/pierrezemb.fr\/blog\/event-driven-architecture-101\/';
+    var disqus_identifier = 'https:\/\/pierrez.github.io\/blog\/blog\/event-driven-architecture-101\/';
     var disqus_title = 'Event-Driven architecture 101';
-    var disqus_url = 'https:\/\/pierrezemb.fr\/blog\/event-driven-architecture-101\/';
+    var disqus_url = 'https:\/\/pierrez.github.io\/blog\/blog\/event-driven-architecture-101\/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -1186,7 +1186,7 @@ section.main .content .markdown pre, section.main .content .markdown pre code {
         <div class="copyright">
 
         
-            <a href="https://pierrezemb.fr/license">Copyright © 2017 Pierre Zemb</a>
+            <a href="https://pierrez.github.io/bloglicense">Copyright © 2017 Pierre Zemb</a>
         
 
         </div>
@@ -1194,31 +1194,31 @@ section.main .content .markdown pre, section.main .content .markdown pre code {
 
         
             <a href="https://github.com/PierreZ" target="_blank">
-                <img class="icon" src="https://pierrezemb.fr/img/github.svg" alt="github" />
+                <img class="icon" src="https://pierrez.github.io/blog/img/github.svg" alt="github" />
             </a>
         
 
         
             <a href="https://twitter.com/PierreZ" target="_blank">
-                <img class="icon" src="https://pierrezemb.fr/img/twitter.svg" alt="twitter" />
+                <img class="icon" src="https://pierrez.github.io/blog/img/twitter.svg" alt="twitter" />
             </a>
         
 
         
             <a href="https://www.linkedin.com/in/pierre-zemb-8004125b" target="_blank">
-                <img class="icon" src="https://pierrezemb.fr/img/linkedin.svg" alt="linkedin" />
+                <img class="icon" src="https://pierrez.github.io/blog/img/linkedin.svg" alt="linkedin" />
             </a>
         
 
         
             <a href="mailto:contact@pierrezemb.fr">
-                <img class="icon" src="https://pierrezemb.fr/img/email.svg" alt="email" />
+                <img class="icon" src="https://pierrez.github.io/blog/img/email.svg" alt="email" />
             </a>
         
 
         
-            <a href="https://pierrezemb.fr/index.xml">
-                <img class="icon" src="https://pierrezemb.fr/img/rss.svg" alt="rss" />
+            <a href="https://pierrez.github.io/blog/index.xml">
+                <img class="icon" src="https://pierrez.github.io/blog/img/rss.svg" alt="rss" />
             </a>
         
 
@@ -1236,7 +1236,7 @@ section.main .content .markdown pre, section.main .content .markdown pre code {
 </script>
 
 
-  <script src="https://pierrezemb.fr/js/highlight.min.js" defer></script>
+  <script src="https://pierrez.github.io/blogjs/highlight.min.js" defer></script>
   
 
 

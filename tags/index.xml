@@ -2,85 +2,85 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Pierre Zemb</title>
-    <link>https://pierrezemb.fr/tags/</link>
+    <link>https://pierrez.github.io/blog/tags/</link>
     <description>Recent content in Tags on Pierre Zemb</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Copyright © 2017 Pierre Zemb</copyright>
     <lastBuildDate>Mon, 04 Jan 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://pierrezemb.fr/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://pierrez.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Container</title>
-      <link>https://pierrezemb.fr/tags/container/</link>
+      <link>https://pierrez.github.io/blog/tags/container/</link>
       <pubDate>Mon, 04 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://pierrezemb.fr/tags/container/</guid>
+      <guid>https://pierrez.github.io/blog/tags/container/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Development</title>
-      <link>https://pierrezemb.fr/tags/development/</link>
+      <link>https://pierrez.github.io/blog/tags/development/</link>
       <pubDate>Fri, 13 May 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://pierrezemb.fr/tags/development/</guid>
+      <guid>https://pierrez.github.io/blog/tags/development/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Docker</title>
-      <link>https://pierrezemb.fr/tags/docker/</link>
+      <link>https://pierrez.github.io/blog/tags/docker/</link>
       <pubDate>Mon, 04 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://pierrezemb.fr/tags/docker/</guid>
+      <guid>https://pierrez.github.io/blog/tags/docker/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Event</title>
-      <link>https://pierrezemb.fr/tags/event/</link>
+      <link>https://pierrez.github.io/blog/tags/event/</link>
       <pubDate>Fri, 13 May 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://pierrezemb.fr/tags/event/</guid>
+      <guid>https://pierrez.github.io/blog/tags/event/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Go</title>
-      <link>https://pierrezemb.fr/tags/go/</link>
+      <link>https://pierrez.github.io/blog/tags/go/</link>
       <pubDate>Sun, 27 Dec 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://pierrezemb.fr/tags/go/</guid>
+      <guid>https://pierrez.github.io/blog/tags/go/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Personal</title>
-      <link>https://pierrezemb.fr/tags/personal/</link>
+      <link>https://pierrez.github.io/blog/tags/personal/</link>
       <pubDate>Sun, 14 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://pierrezemb.fr/tags/personal/</guid>
+      <guid>https://pierrez.github.io/blog/tags/personal/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Projects</title>
-      <link>https://pierrezemb.fr/tags/projects/</link>
+      <link>https://pierrez.github.io/blog/tags/projects/</link>
       <pubDate>Sun, 14 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://pierrezemb.fr/tags/projects/</guid>
+      <guid>https://pierrez.github.io/blog/tags/projects/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Unix</title>
-      <link>https://pierrezemb.fr/tags/unix/</link>
+      <link>https://pierrez.github.io/blog/tags/unix/</link>
       <pubDate>Mon, 04 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://pierrezemb.fr/tags/unix/</guid>
+      <guid>https://pierrez.github.io/blog/tags/unix/</guid>
       <description></description>
     </item>
     
