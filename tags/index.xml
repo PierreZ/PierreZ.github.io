@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Pierre Zemb</title>
+    <link>https://pierrezemb.fr/tags/</link>
+    <description>Recent content in Tags on Pierre Zemb</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>Copyright © 2017 Pierre Zemb</copyright>
+    <lastBuildDate>Mon, 04 Jan 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://pierrezemb.fr/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Container</title>
+      <link>https://pierrezemb.fr/tags/container/</link>
+      <pubDate>Mon, 04 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://pierrezemb.fr/tags/container/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Development</title>
+      <link>https://pierrezemb.fr/tags/development/</link>
+      <pubDate>Fri, 13 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://pierrezemb.fr/tags/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>https://pierrezemb.fr/tags/docker/</link>
+      <pubDate>Mon, 04 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://pierrezemb.fr/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Event</title>
+      <link>https://pierrezemb.fr/tags/event/</link>
+      <pubDate>Fri, 13 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://pierrezemb.fr/tags/event/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Go</title>
+      <link>https://pierrezemb.fr/tags/go/</link>
+      <pubDate>Sun, 27 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://pierrezemb.fr/tags/go/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Personal</title>
+      <link>https://pierrezemb.fr/tags/personal/</link>
+      <pubDate>Sun, 14 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://pierrezemb.fr/tags/personal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>https://pierrezemb.fr/tags/projects/</link>
+      <pubDate>Sun, 14 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://pierrezemb.fr/tags/projects/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Unix</title>
+      <link>https://pierrezemb.fr/tags/unix/</link>
+      <pubDate>Mon, 04 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://pierrezemb.fr/tags/unix/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

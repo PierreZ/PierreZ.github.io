@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Go on Pierre Zemb</title>
+    <link>https://pierrezemb.fr/tags/go/</link>
+    <description>Recent content in Go on Pierre Zemb</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>Copyright © 2017 Pierre Zemb</copyright>
+    <lastBuildDate>Sun, 27 Dec 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://pierrezemb.fr/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Why you really should give Golang a try!</title>
+      <link>https://pierrezemb.fr/blog/why-you-really-should-give-golang-a-try/</link>
+      <pubDate>Sun, 27 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://pierrezemb.fr/blog/why-you-really-should-give-golang-a-try/</guid>
+      <description>As you may or may not know, Golang is a new programming language created by Google. It’s great for writing high-performance, concurrent server applications and tools. With it, you can easily write your own web server to render your static HTML files, or go deeper and create a REST services.
+package main import &amp;quot;fmt&amp;quot; func main() { fmt.Println(&amp;quot;hello world&amp;quot;) }  Go’s Hello World
+Go has many advantages over languages like good-old Java, C++ or add your favorite language here.</description>
+    </item>
+    
+  </channel>
+</rss>
