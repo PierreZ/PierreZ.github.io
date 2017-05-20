@@ -16,7 +16,7 @@
 <meta property="twitter:title" content="Let&#39;s talk about containers">
 
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:image" content="https://pierrez.github.io/blogimg/myself.png">
+    <meta property="twitter:image" content="https://pierrez.github.io/img/myself.png">
 
 <meta property="twitter:description" content="">
 
@@ -26,7 +26,7 @@
      Pierre Zemb - Let&#39;s talk about containers 
 
 </title>
-<link rel="canonical" href="https://pierrez.github.io/blog/blog/lets-talk-about-containers/">
+<link rel="canonical" href="https://pierrez.github.io/blog/lets-talk-about-containers/">
 
 
 <style media="screen">
@@ -954,7 +954,7 @@ section.main .content .markdown pre, section.main .content .markdown pre code {
 
 <link rel="shortcut icon"
 
-    href="https://pierrez.github.io/blog/img/myself.png"
+    href="https://pierrez.github.io/img/myself.png"
 
 >
 
@@ -970,13 +970,13 @@ section.main .content .markdown pre, section.main .content .markdown pre code {
 <section class="header">
 
     <div class="container">
-        <a href="https://pierrez.github.io/blog"><img class="logo" src="https://pierrez.github.io/blog/img/myself.png" alt="logo" /></a>
+        <a href="https://pierrez.github.io/"><img class="logo" src="https://pierrez.github.io/img/myself.png" alt="logo" /></a>
         <div class="content">
-            <a href="https://pierrez.github.io/blog"><div class="name"><h1>Pierre Zemb</h1></div></a>
+            <a href="https://pierrez.github.io/"><div class="name"><h1>Pierre Zemb</h1></div></a>
             <nav>
                 <ul>
                     
-                        <a href="https://pierrez.github.io/blogblog/"><li>Blog</li></a>
+                        <a href="https://pierrez.github.io/blog/"><li>Blog</li></a>
                     
                     
                         
@@ -987,13 +987,13 @@ section.main .content .markdown pre, section.main .content .markdown pre code {
                     
                         
                             
-                            <a href="https://pierrez.github.io/blog/projects"><li>projects</li></a>
+                            <a href="https://pierrez.github.io/projects"><li>projects</li></a>
                             
                         
                     
                     
                         
-                            <a href="https://pierrez.github.io/blog/about/"><li>About Me</li></a>
+                            <a href="https://pierrez.github.io/about/"><li>About Me</li></a>
                         
                     
                         
@@ -1031,13 +1031,13 @@ section.main .content .markdown pre, section.main .content .markdown pre code {
                         <ul>
                           
                             <div class="middot"></div>
-                            <li><a href="https://pierrez.github.io/blog/tags/unix">unix</a> </li>
+                            <li><a href="https://pierrez.github.io/tags/unix">unix</a> </li>
                           
                             <div class="middot"></div>
-                            <li><a href="https://pierrez.github.io/blog/tags/docker">docker</a> </li>
+                            <li><a href="https://pierrez.github.io/tags/docker">docker</a> </li>
                           
                             <div class="middot"></div>
-                            <li><a href="https://pierrez.github.io/blog/tags/container">container</a> </li>
+                            <li><a href="https://pierrez.github.io/tags/container">container</a> </li>
                           
                         </ul>
                     </div>
@@ -1051,7 +1051,7 @@ section.main .content .markdown pre, section.main .content .markdown pre code {
 
 <h1 id="write-once-run-everywhere">“Write once, run everywhere”</h1>
 
-<p><img src="https://pierrez.github.io/blog/img/containers/containers_1.jpeg" alt="image" /></p>
+<p><img src="https://pierrez.github.io/img/containers/containers_1.jpeg" alt="image" /></p>
 
 <p>When I first heard about containers, I was working as a part-time internship for a french bank as a developer in a Ops team. I was working around <a href="https://hadoop.apache.org/">Hadoop</a> and monitoring systems, and I was wondering “How should I properly deploy my work?”. It was a java app, running into the official Java version provided by my company. <strong>I couldn’t just give it to my colleagues</strong> <strong>and leave them do some vaudou stuff because they are the Ops team</strong>. I remembered saying to myself ”fortunately, all the features that I need are in this official java version, I don’t need the latest JRE. I just need to bundle everything into a jar and done”. But what if it wasn’t? What if I had to explain to my colleagues that I need the new JRE for a really small app written by an intern? Or I needed another non-standard library during runtime?</p>
 
@@ -1061,11 +1061,11 @@ section.main .content .markdown pre, section.main .content .markdown pre code {
 
 <p>I will always remember my chat with my colleagues about it. I was like this:</p>
 
-<p><img src="https://pierrez.github.io/blog/img/containers/containers_2.jpeg" alt="image" /></p>
+<p><img src="https://pierrez.github.io/img/containers/containers_2.jpeg" alt="image" /></p>
 
 <p>And they were more like:</p>
 
-<p><img src="https://pierrez.github.io/blog/img/containers/containers_3.jpeg" alt="image" /></p>
+<p><img src="https://pierrez.github.io/img/containers/containers_3.jpeg" alt="image" /></p>
 
 <p>Ops knew about containers since the dawn of time, so why such hype now? I think that “write once, run everywhere” is the true slogan of Docker, because you can run docker containers in any environments that has Docker. <strong>You want to try the latest datastore/SaaS app that you found on Hacker News or Reddit? There’s a Dockerfile for that</strong>. And that is super cool. So everyone started to get interested in Docker, myself included. But the real benefit is that many huge companies like Google admits that containers are the way they are deploying apps. <strong>They don’t care what type of applications they are deploying or where it’s running, it’s just running somewhere.</strong> That’s all that matters. By unifying the packages, you can automatize and deliver whatever you want somewhere. Do you really care if it’s on a specific machine? No you don’t. That’s a powerful way to think infrastructure more like a bunch of compute or storage power, and not individual machines.</p>
 
@@ -1122,15 +1122,15 @@ CMD [&quot;/hello&quot;]
                 <div class="navigation">
                     
                     <div>
-                        <img class="icon" src="https://pierrez.github.io/blog/img/back.svg" alt="back" />
-                        <a href="https://pierrez.github.io/blog/blog/why-you-really-should-give-golang-a-try/">Why you really should give Golang a try!</a>
+                        <img class="icon" src="https://pierrez.github.io/img/back.svg" alt="back" />
+                        <a href="https://pierrez.github.io/blog/why-you-really-should-give-golang-a-try/">Why you really should give Golang a try!</a>
                     </div>
                     
                     <div style="width: 100%;"></div>
                     
                     <div>
-                        <a href="https://pierrez.github.io/blog/blog/event-driven-architecture-101/">Event-Driven architecture 101</a>
-                        <img class="icon" src="https://pierrez.github.io/blog/img/next.svg" alt="next" />
+                        <a href="https://pierrez.github.io/blog/event-driven-architecture-101/">Event-Driven architecture 101</a>
+                        <img class="icon" src="https://pierrez.github.io/img/next.svg" alt="next" />
                     </div>
                     
                 </div>
@@ -1140,9 +1140,9 @@ CMD [&quot;/hello&quot;]
                 <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'pierrezemb-fr';
-    var disqus_identifier = 'https:\/\/pierrez.github.io\/blog\/blog\/lets-talk-about-containers\/';
+    var disqus_identifier = 'https:\/\/pierrez.github.io\/blog\/lets-talk-about-containers\/';
     var disqus_title = 'Let\x27s talk about containers';
-    var disqus_url = 'https:\/\/pierrez.github.io\/blog\/blog\/lets-talk-about-containers\/';
+    var disqus_url = 'https:\/\/pierrez.github.io\/blog\/lets-talk-about-containers\/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -1162,7 +1162,7 @@ CMD [&quot;/hello&quot;]
         <div class="copyright">
 
         
-            <a href="https://pierrez.github.io/bloglicense">Copyright © 2017 Pierre Zemb</a>
+            <a href="https://pierrez.github.io/license">Copyright © 2017 Pierre Zemb</a>
         
 
         </div>
@@ -1170,31 +1170,31 @@ CMD [&quot;/hello&quot;]
 
         
             <a href="https://github.com/PierreZ" target="_blank">
-                <img class="icon" src="https://pierrez.github.io/blog/img/github.svg" alt="github" />
+                <img class="icon" src="https://pierrez.github.io/img/github.svg" alt="github" />
             </a>
         
 
         
             <a href="https://twitter.com/PierreZ" target="_blank">
-                <img class="icon" src="https://pierrez.github.io/blog/img/twitter.svg" alt="twitter" />
+                <img class="icon" src="https://pierrez.github.io/img/twitter.svg" alt="twitter" />
             </a>
         
 
         
             <a href="https://www.linkedin.com/in/pierre-zemb-8004125b" target="_blank">
-                <img class="icon" src="https://pierrez.github.io/blog/img/linkedin.svg" alt="linkedin" />
+                <img class="icon" src="https://pierrez.github.io/img/linkedin.svg" alt="linkedin" />
             </a>
         
 
         
             <a href="mailto:contact@pierrezemb.fr">
-                <img class="icon" src="https://pierrez.github.io/blog/img/email.svg" alt="email" />
+                <img class="icon" src="https://pierrez.github.io/img/email.svg" alt="email" />
             </a>
         
 
         
-            <a href="https://pierrez.github.io/blog/index.xml">
-                <img class="icon" src="https://pierrez.github.io/blog/img/rss.svg" alt="rss" />
+            <a href="https://pierrez.github.io/index.xml">
+                <img class="icon" src="https://pierrez.github.io/img/rss.svg" alt="rss" />
             </a>
         
 
@@ -1212,7 +1212,7 @@ CMD [&quot;/hello&quot;]
 </script>
 
 
-  <script src="https://pierrez.github.io/blogjs/highlight.min.js" defer></script>
+  <script src="https://pierrez.github.io/js/highlight.min.js" defer></script>
   
 
 

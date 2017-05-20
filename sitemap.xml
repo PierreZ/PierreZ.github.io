@@ -3,98 +3,43 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://pierrez.github.io/blog/about/</loc>
+    <loc>https://pierrez.github.io/about/</loc>
     <lastmod>2017-05-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://pierrez.github.io/blog/blog/hello-world-new-blog/</loc>
+    <loc>https://pierrez.github.io/blog/hello-world-new-blog/</loc>
     <lastmod>2017-05-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://pierrez.github.io/blog/projects/small-project/</loc>
+    <loc>https://pierrez.github.io/projects/small-project/</loc>
     <lastmod>2017-05-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://pierrez.github.io/blog/projects/projects/</loc>
+    <loc>https://pierrez.github.io/projects/projects/</loc>
     <lastmod>2017-05-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://pierrez.github.io/blog/blog/student-no-more/</loc>
+    <loc>https://pierrez.github.io/blog/student-no-more/</loc>
     <lastmod>2016-10-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://pierrez.github.io/blog/blog/event-driven-architecture-101/</loc>
+    <loc>https://pierrez.github.io/blog/event-driven-architecture-101/</loc>
     <lastmod>2016-05-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://pierrez.github.io/blog/blog/lets-talk-about-containers/</loc>
+    <loc>https://pierrez.github.io/blog/lets-talk-about-containers/</loc>
     <lastmod>2016-01-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://pierrez.github.io/blog/blog/why-you-really-should-give-golang-a-try/</loc>
+    <loc>https://pierrez.github.io/blog/why-you-really-should-give-golang-a-try/</loc>
     <lastmod>2015-12-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://pierrez.github.io/blog/blog/</loc>
-    <lastmod>2017-05-14T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://pierrez.github.io/blog/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://pierrez.github.io/blog/tags/container/</loc>
-    <lastmod>2016-01-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://pierrez.github.io/blog/tags/development/</loc>
-    <lastmod>2016-05-13T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://pierrez.github.io/blog/tags/docker/</loc>
-    <lastmod>2016-01-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://pierrez.github.io/blog/tags/event/</loc>
-    <lastmod>2016-05-13T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://pierrez.github.io/blog/tags/go/</loc>
-    <lastmod>2015-12-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://pierrez.github.io/blog/home/</loc>
-  </url>
-  
-  <url>
-    <loc>https://pierrez.github.io/blog/license/</loc>
-  </url>
-  
-  <url>
-    <loc>https://pierrez.github.io/blog/tags/personal/</loc>
-    <lastmod>2017-05-14T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -104,25 +49,80 @@
   </url>
   
   <url>
-    <loc>https://pierrez.github.io/blog/tags/projects/</loc>
-    <lastmod>2017-05-14T00:00:00+00:00</lastmod>
+    <loc>https://pierrez.github.io/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://pierrez.github.io/blog/projects/</loc>
-    <lastmod>2017-05-14T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://pierrez.github.io/blog/tags/</loc>
+    <loc>https://pierrez.github.io/tags/container/</loc>
     <lastmod>2016-01-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://pierrez.github.io/blog/tags/unix/</loc>
+    <loc>https://pierrez.github.io/tags/development/</loc>
+    <lastmod>2016-05-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://pierrez.github.io/tags/docker/</loc>
+    <lastmod>2016-01-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://pierrez.github.io/tags/event/</loc>
+    <lastmod>2016-05-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://pierrez.github.io/tags/go/</loc>
+    <lastmod>2015-12-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://pierrez.github.io/home/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pierrez.github.io/license/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pierrez.github.io/tags/personal/</loc>
+    <lastmod>2017-05-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://pierrez.github.io/</loc>
+    <lastmod>2017-05-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://pierrez.github.io/tags/projects/</loc>
+    <lastmod>2017-05-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://pierrez.github.io/projects/</loc>
+    <lastmod>2017-05-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://pierrez.github.io/tags/</loc>
+    <lastmod>2016-01-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://pierrez.github.io/tags/unix/</loc>
     <lastmod>2016-01-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>

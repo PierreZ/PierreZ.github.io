@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Docker on Pierre Zemb</title>
-    <link>https://pierrez.github.io/blog/tags/docker/</link>
+    <link>https://pierrez.github.io/tags/docker/</link>
     <description>Recent content in Docker on Pierre Zemb</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Copyright © 2017 Pierre Zemb</copyright>
     <lastBuildDate>Mon, 04 Jan 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://pierrez.github.io/blog/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://pierrez.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Let&#39;s talk about containers</title>
-      <link>https://pierrez.github.io/blog/blog/lets-talk-about-containers/</link>
+      <link>https://pierrez.github.io/blog/lets-talk-about-containers/</link>
       <pubDate>Mon, 04 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://pierrez.github.io/blog/blog/lets-talk-about-containers/</guid>
+      <guid>https://pierrez.github.io/blog/lets-talk-about-containers/</guid>
       <description>In the last two years, there’s been a technology that became really hype. It was the graal for easy deployments, easy applications management. Let’s talk about containers.
 “Write once, run everywhere” When I first heard about containers, I was working as a part-time internship for a french bank as a developer in a Ops team. I was working around Hadoop and monitoring systems, and I was wondering “How should I properly deploy my work?</description>
     </item>
