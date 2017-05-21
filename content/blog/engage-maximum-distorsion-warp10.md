@@ -29,7 +29,7 @@ Not only Warp10 allows us the reach an unbelievable scalability, it comes with h
 - the time a customer is taking to register on your website
 - The heart rate of a person measured through a smartwatch
 
-From an historical point of view, time series appeared shortly after the creation of the Web, to help engineers monitor the networks. It quickly expands to also monitors servers. Monitoring is **fundamental** to running a stable service. With the right monitoring system, you can have **insights** and **KPIs** about your service:
+From an historical point of view, time series appeared shortly after the creation of the Web, to **help engineers monitor the networks**. It quickly expands to also monitors servers. With the right monitoring system, you can have **insights** and **KPIs** about your service:
 
 * **Analysis of long-term trend**
     * How fast is my database growing?
@@ -68,8 +68,6 @@ Now the time series ecosystem is bigger than ever, here's a short list of what y
 * [Riak TS](http://basho.com/products/riak-ts/)
 * [OpenTSDB](http://opentsdb.net/)
 * [KairosDB](https://kairosdb.github.io/)
-* [Elasticsearch](https://www.elastic.co/products/elasticsearch)
-* [Druid](http://druid.io/)
 * [Blueflood](http://blueflood.io/)
 * [Graphite (Whisper)](https://graphiteapp.org/)
 
@@ -91,18 +89,20 @@ And then there's **Warp10**. The difference is quite simple. Warp10 is **a platf
 
 ![image](/img/engage-maximum-distorsion-warp10/warpscript.png)
 
+Warp10 folks created WarpScript, an **extensible stack oriented programming language** which offers more than **800 functions** and **several high level frameworks** to ease and speed your data analysis. Simply **create scripts** containing your data analysis code and **submit them to the platform**, they will **execute close to where the data resides** and you will get the result of that analysis as a **JSON object** that you can **integrate into your application**.
+
 
 * **Server Side Analysis**
 
-    > Yes, you'll be able to run that awesome query that is fetching millions of datapoints.
+    > Yes, you'll be able to run that **awesome query that is fetching millions of datapoints** and only get the result. You need all the data, or just the timestamp of a weird datapoint? **The result of the script is simply the end of itself**.
 
 * **Dataflow language**
 
-    > WarpScript is really easy to code, because the ouput of a function is used as the input of the following one. Coding became logical. First you need to **fetch** your points. Then **applying some downsampling**. Then **aggregate**. These 3 sentences are translated into **3 lines of WarpScript**. 
+    > WarpScript is really easy to code, **because the ouput of a function** is used as the **input of the following one**. Coding became logical. First you need to **fetch** your points. Then **applying some downsampling**. Then **aggregate**. These 3 sentences are translated into **3 lines of WarpScript**. 
 
 * **Rich programming QL**
 
-    > WarpScript is coming with more than 800 functions, ready to use. Patterns detections, outliers, rolling average, FFT, are only functions to apply on data.
+    > WarpScript is coming with more than 800 functions, ready to use. **Patterns detections, outliers, rolling average, FFT**, these are functions to apply on data.
 
 * **Geo-Fencing capabilities**
 
@@ -111,19 +111,23 @@ And then there's **Warp10**. The difference is quite simple. Warp10 is **a platf
 
 * **Unified Language** 
 
-    > WarpScript can be used in batch mode, or in real-time.
+    > WarpScript can be used in **batch** mode, or in **real-time**.
 
 # Geez, give me an example!
 
+Here's an example of a simple but advanced query:
+
 ```warpscript
-[ $token ‘temperature’ {} NOW 1 h ] FETCH        // Fetching all values
+[ $token ‘temperature’ {} NOW 1 h ] FETCH       // Fetching all values
 
 [ SWAP bucketizer.max	0 1 m 0 ] BUCKETIZE     // Get max value for each minute
 
-[ SWAP mapper.round 0 0 0 ] MAPPER  		// Round to nearest decimal
+[ SWAP mapper.round 0 0 0 ] MAP  		// Round to nearest decimal
 
 [ SWAP [ 'buildingID' ] reducer.max ] REDUCE    // aggregate according to labels 
 ```
+
+Have you guessed the goal? The result will **display the temperature from now to 1 hour of the hottest room per buildingID**.
 
 # What about a more complex example?
 
@@ -143,3 +147,12 @@ I want to **detect the green part** of the time series, because I know that my s
 
 
 As you can, PATTERNDETECTION is working even with the increasing amplitude! You can discover this example by yourself by using [Quantum](https://home.cityzendata.net/quantum/preview/#/plot/TkVXR1RTICdjb3MnIFJFTkFNRQoxIDEwODAKPCUgRFVQICdpJyBTVE9SRSBEVVAgMiAqIFBJICogMzYwIC8gQ09TICRpICogTmFOIE5hTiBOYU4gNCBST0xMIEFERFZBTFVFICU+IEZPUgoKWyBTV0FQIGJ1Y2tldGl6ZXIubGFzdCAxMDgwIDEgMCBdIEJVQ0tFVElaRSAnY29zJyBTVE9SRQoKTkVXR1RTICdwYXR0ZXJuLnRvLmRldGVjdCcgUkVOQU1FCjIwMCAzNzAKPCUgIERVUCAnaScgU1RPUkUgRFVQIDIgKiBQSSAqIDM2MCAvIENPUyAkaSAqIE5hTiBOYU4gTmFOIDQgUk9MTCBBRERWQUxVRSAlPiBGT1IKClsgU1dBUCBidWNrZXRpemVyLmxhc3QgMjE2MCAxIDAgXSBCVUNLRVRJWkUgJ3BhdHRlcm4udG8uZGV0ZWN0JyBTVE9SRQoKLy8gQ3JlYXRlIFBhdHRlcm4KMzIgJ3dpbmRvd1NpemUnIFNUT1JFCjggJ3BhdHRlcm5MZW5ndGgnIFNUT1JFCjE2ICdxdWFudGl6YXRpb25TY2FsZScgU1RPUkUKCiRwYXR0ZXJuLnRvLmRldGVjdCAwIEdFVCAkd2luZG93U2l6ZSAkcGF0dGVybkxlbmd0aCAkcXVhbnRpemF0aW9uU2NhbGUgUEFUVEVSTlMgVkFMVUVTICdwYXR0ZXJucycgU1RPUkUKCiRjb3MgJHBhdHRlcm5zICR3aW5kb3dTaXplICRwYXR0ZXJuTGVuZ3RoICRxdWFudGl6YXRpb25TY2FsZSAgUEFUVEVSTkRFVEVDVElPTiAnY29zLmRldGVjdGlvbicgUkVOQU1FICdjb3MuZGV0ZWN0aW9uJyBTVE9SRQoKJGNvcy5kZXRlY3Rpb24KLy8gTGV0J3MgY3JlYXRlIGEgZ3RzIGZvciBlYWNoIHRyaXAKMTAgICAgICAgLy8gIFF1aWV0IHBlcmlvZAo1ICAgICAgICAgLy8gTWluIG51bWJlciBvZiB2YWx1ZXMKJ3N1YlBhdHRlcm4nICAvLyBMYWJlbApUSU1FU1BMSVQKCiRjb3M=/eyJ1cmwiOiJodHRwczovL3dhcnAuY2l0eXplbmRhdGEubmV0L2FwaS92MCIsImhlYWRlck5hbWUiOiJYLUNpdHl6ZW5EYXRhIn0=), the official web-based IDE for WarpScript. **You need to switch X-axis scale to Timestamp in order to see the courbe**.
+
+# additionnals informations
+
+Thanks for reading, here's a nice list of additionnals informations about the time series subject and Warp10:
+
+* [War10 tour](http://tour.warp10.io), similar to "The Go Tour"
+* [Warp10 official documentation](http://warp10.io)
+* [Presentation of the Warp 10 Time Series Platform at the 42 US school in Fremont](Presentation of the Warp 10 Time Series Platform at the 42 US school in Fremont) 
+* [Warp10 Google Groups](https://groups.google.com/forum/#!forum/warp10-users)
