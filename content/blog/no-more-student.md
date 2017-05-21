@@ -2,6 +2,8 @@
 author: "Pierre Zemb"
 date: 2016-10-08
 title: Student? No more!
+tags: ["personal"]
+
 ---
 
 # Student? No more!

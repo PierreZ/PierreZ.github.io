@@ -10,10 +10,11 @@ set -e;
 
 echo "Deleting old publication"
 rm -rf public
-git clone git@github.com:PierreZ/blog.git --branch gh-pages public
-hugo
+git clone git@github.com:PierreZ/pierrez.github.io.git --branch master public
+rm -rf public/*
+hugo -t cocoa-eh
 cd public 
 
 echo "pushing..."
-git add --all && git commit -m "Publishing to gh-pages" && git push origin gh-pages && cd ..
+git add --all && git commit -m "(./publish.sh) updating master" && git push origin master && cd ..
 echo "done"

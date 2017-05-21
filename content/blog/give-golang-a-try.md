@@ -4,6 +4,7 @@ date: 2015-12-27
 title: Why you really should give Golang a try!
 best: false
 tags: ["go","development"]
+
 ---
 
 ![image](/img/golang-a-try/golang_1.png)
