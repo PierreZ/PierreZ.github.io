@@ -4,11 +4,20 @@ title = "About Me"
 +++
 
 
-Hi! My name is Pierre Zemb, and I'm a **software engineer working at OVH**. My everyday job is about **scalability, open-source software and Time Series** at [Metrics Data Platform](https://www.ovh.com/fr/data-platforms/metrics/).
+Hi! My name is Pierre Zemb, and I'm a **software engineer working at OVH**. My everyday job is about **distributed systems, scalability, open-source software and Time Series** at [Metrics Data Platform](https://www.ovh.com/fr/data-platforms/metrics/).
 
-I'm spending my days playing with [Warp 10 Platform](http://www.warp10.io/) and numerous projects from [The Apache Software Foundation](https://www.apache.org/).
+I'm spending my days working around the [Warp 10 Platform](http://www.warp10.io/) and numerous projects from [The Apache Software Foundation](https://www.apache.org/).
 
-I'm also the co-organizer of [FinistJUG](http://finistjug.fr), [GDG Finistère](http://gdgfinistere.org), [Brest Startup Weekend](http://brest.startupweekend.org) and [Devoxx4Kids Brest](http://www.lacantine-brest.net/event/devoxx4kids-brest/). You can learn more about me on my [website](https://pierrezemb.fr). 
+I'm the co-organizer of several events in Brest, such as:
+
+* [FinistJUG](http://finistjug.fr)
+* [GDG Finistère](http://gdgfinistere.org)
+* [Brest Startup Weekend](http://brest.startupweekend.org)
+* [Devoxx4Kids Brest](http://www.lacantine-brest.net/event/devoxx4kids-brest/)
+
+I'm also a teacher assistant in my former school ISEN Brest.
+
+ You can learn more about me on my [website](https://pierrezemb.fr). 
 
 ## Disclaimer
 

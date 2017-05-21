@@ -7,5 +7,5 @@
 ```bash 
 mkdir themes/
 git clone https://github.com/fuegowolf/cocoa-eh-hugo-theme.git themes/cocoa-eh
-hugo -t cocoa-eh serve 
+hugo -t cocoa-eh server
 ```
