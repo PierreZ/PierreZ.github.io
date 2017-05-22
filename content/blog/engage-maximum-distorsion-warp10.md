@@ -89,7 +89,7 @@ Algorithms are resource heavy. Whatever they're using CPU, ram, disk and network
 
 ![image](/img/engage-maximum-distorsion-warp10/warpscript.png)
 
-Warp10 folks created WarpScript, an **extensible stack oriented programming language** which offers more than **800 functions** and **several high level frameworks** to ease and speed your data analysis. Simply **create scripts** containing your data analysis code and **submit them to the platform**, they will **execute close to where the data resides** and you will get the result of that analysis as a **JSON object** that you can **integrate into your application**.
+Warp10 folks created WarpScript, an **extensible [stack oriented programming language](https://en.wikipedia.org/wiki/Stack-oriented_programming_language)** which offers more than **800 functions** and **several high level frameworks** to ease and speed your data analysis. Simply **create scripts** containing your data analysis code and **submit them to the platform**, they will **execute close to where the data resides** and you will get the result of that analysis as a **JSON object** that you can **integrate into your application**.
 
 
 ## Server Side Analysis
@@ -104,11 +104,11 @@ WarpScript is really easy to code, **because of the stack design**. You'll be **
 * **BUCKETIZE** will take the GTS from the stack, apply some downsampling, and push the result into the stack 
 * **REDUCE** will take the GTS from the stack, aggregate them, and push them back into the stack
 
-Debugguing as never be that easy, just use the keyword **STOP** to see the stack at every moment 
+Debugguing as never be that easy, just use the keyword **STOP** to see the stack at any moment.
 
 ## Rich programming QL
 
-WarpScript is coming with more than **800 functions**, ready to use. **Patterns detections, outliers, rolling average, FFT**, these are functions to apply on data.
+WarpScript is coming with more than **800 functions**, ready to use. Things like **Patterns detections, outliers, rolling average, FFT, IDWT, ** are built-in.
 
 ## Geo-Fencing capabilities
 
