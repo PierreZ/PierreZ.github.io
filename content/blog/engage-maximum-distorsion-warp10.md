@@ -73,17 +73,17 @@ Now the time series ecosystem is bigger than ever, here's a short list of what y
 
 And then there's **Warp10**. The difference is quite simple. Warp10 is **a platform** whereas all the time series listed above are **stores**. This is game changing, for multiples reasons.
 
-* **Security-first design**
+## Security-first design
 
-    > Security is mandatory for data access and sharing job's results. But in most of the above databases, security access is not handled by default. With Warp10, security is handled with crypto tokens similar to [Macaroons](https://research.google.com/pubs/pub41892.html). 
+Security is mandatory for data access and sharing job's results. But in most of the above databases, security access is not handled by default. With Warp10, security is handled with crypto tokens similar to [Macaroons](https://research.google.com/pubs/pub41892.html). 
 
-* **High level analysis capabilities** 
+## High level analysis capabilities
 
-    > Using classical time series database, **high level analysis must be done elsewhere**, with R, Spark, Flink, Python, or whatever languages or frameworks that you want to use. Using Warp10, you can just **submit your script** and voilà!
+Using classical time series database, **high level analysis must be done elsewhere**, with R, Spark, Flink, Python, or whatever languages or frameworks that you want to use. Using Warp10, you can just **submit your script** and voilà!
 
-* **server-side calculation**
+## server-side calculation
 
-    > Algorithms are resource heavy. Whatever they're using CPU, ram, disk and network, you'll hit **limitations** on your personal computer. Can you really aggregate and analyze one year of data from thousands of sensors on your laptop? Maybe, but what if you're submitting the job from a mobile? To be **scalable**, analysis must be done **server-side**.
+Algorithms are resource heavy. Whatever they're using CPU, ram, disk and network, you'll hit **limitations** on your personal computer. Can you really aggregate and analyze one year of data from thousands of sensors on your laptop? Maybe, but what if you're submitting the job from a mobile? To be **scalable**, analysis must be done **server-side**.
 
 # Meet WarpScript
 
@@ -92,26 +92,32 @@ And then there's **Warp10**. The difference is quite simple. Warp10 is **a platf
 Warp10 folks created WarpScript, an **extensible stack oriented programming language** which offers more than **800 functions** and **several high level frameworks** to ease and speed your data analysis. Simply **create scripts** containing your data analysis code and **submit them to the platform**, they will **execute close to where the data resides** and you will get the result of that analysis as a **JSON object** that you can **integrate into your application**.
 
 
-* **Server Side Analysis**
+## Server Side Analysis
 
-    > Yes, you'll be able to run that **awesome query that is fetching millions of datapoints** and only get the result. You need all the data, or just the timestamp of a weird datapoint? **The result of the script is simply the end of itself**.
+Yes, you'll be able to run that **awesome query that is fetching millions of datapoints** and only get the result. You need all the data, or just the timestamp of a weird datapoint? **The result of the script is simply what's left on the stack**.
 
-* **Dataflow language**
+## Dataflow language
 
-    > WarpScript is really easy to code, **because the ouput of a function** is used as the **input of the following one**. Coding became logical. First you need to **fetch** your points. Then **applying some downsampling**. Then **aggregate**. These 3 sentences are translated into **3 lines of WarpScript**. 
+WarpScript is really easy to code, **because of the stack design**. You'll be **pushing elements into the stack and consume them.**. Coding became logical. First you need to **fetch** your points. Then **applying some downsampling**. Then **aggregate**. These 3 sentences are translated into **3 lines of WarpScript**:
+    
+* **FETCH** will push the needed GTS into the stack
+* **BUCKETIZE** will take the GTS from the stack, apply some downsampling, and push the result into the stack 
+* **REDUCE** will take the GTS from the stack, aggregate them, and push them back into the stack
 
-* **Rich programming QL**
+Debugguing as never be that easy, just use the keyword **STOP** to see the stack at every moment 
 
-    > WarpScript is coming with more than 800 functions, ready to use. **Patterns detections, outliers, rolling average, FFT**, these are functions to apply on data.
+## Rich programming QL
 
-* **Geo-Fencing capabilities**
+WarpScript is coming with more than **800 functions**, ready to use. **Patterns detections, outliers, rolling average, FFT**, these are functions to apply on data.
 
-    > Both **space** (location) and **time** are considered **first class citizens**. Complex searches like “**find all the sensors active during last Monday in the perimeter delimited by this geo-fencing polygon**” can be done without involving expensive joins between separate time series for the same source.
+## Geo-Fencing capabilities
+
+Both **space** (location) and **time** are considered **first class citizens**. Complex searches like “**find all the sensors active during last Monday in the perimeter delimited by this geo-fencing polygon**” can be done without involving expensive joins between separate time series for the same source.
 
 
-* **Unified Language** 
+## Unified Language
 
-    > WarpScript can be used in **batch** mode, or in **real-time**.
+WarpScript can be used in **batch** mode, or in **real-time**, because uou need both of them in the real world.
 
 # Geez, give me an example!
 
