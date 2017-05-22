@@ -139,7 +139,7 @@ Have you guessed the goal? The result will **display the temperature from now to
 
 # What about a more complex example?
 
-you're still here? Good, let's have a more complex example. Let's say that I want to to do some patterns recognition. With WarpScript, it's only a 2 functions calls:
+you're still here? Good, let's have a more complex example. Let's say that I want to do some patterns recognition. With WarpScript, it's only a 2 functions calls:
 
 * **PATTERNS** is generating a list of motifs.
 * **PATTERNDETECTION** is running the list of motifs on all the time series you have.
