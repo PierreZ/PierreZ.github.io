@@ -119,7 +119,7 @@ Both **space** (location) and **time** are considered **first class citizens**. 
 
 ## Unified Language
 
-WarpScript can be used in **batch** mode, or in **real-time**, because uou need both of them in the real world.
+WarpScript can be used in **batch** mode, or in **real-time**, because you need both of them in the real world.
 
 # Geez, give me an example!
 
