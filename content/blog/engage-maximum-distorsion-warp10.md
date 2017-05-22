@@ -110,7 +110,7 @@ Debugguing as never be that easy, just use the keyword **STOP** to see the stack
 
 ## Rich programming QL
 
-WarpScript is coming with more than **800 functions**, ready to use. Things like **Patterns detections, outliers, rolling average, FFT, IDWT, ** are built-in.
+WarpScript is coming with more than **800 functions**, ready to use. Things like **Patterns detections, outliers, rolling average, FFT, IDWT** are built-in.
 
 ## Geo-Fencing capabilities
 
