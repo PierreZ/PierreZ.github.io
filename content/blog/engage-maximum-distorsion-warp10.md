@@ -1,10 +1,12 @@
-+++
-date = "2017-05-21"
-title = "Engage maximum warp speed in time series analysis with WarpScript"
-tags = ["warp10","time series"]
-description = "Why Warp10 and WarpScript are the best tools to analyze time series data"
-draft = true
-+++
+---
+author: "Pierre Zemb"
+date: 2017-05-21
+title: "Engage maximum warp speed in time series analysis with WarpScript"
+best: true
+tags: ["warp10","time series"]
+description: "Why Warp10 and WarpScript are the best tools to analyze time series data"
+draft: true
+---
 
 We, at Metrics, are working everyday with [Warp10 Platform](http://warp10.io), an open source Time Series database. You may not know it because it's not as famous as [Prometheus](https://prometheus.io/) or [InfluxDB](https://docs.influxdata.com/influxdb/), but Warp10 is the most **powerful and generic solution** to store and analyze sensor data. It's the **core** of Metrics, and many internal teams from OVH are using us to monitor their infrastructure. As a result, we are handling a pretty nice traffic 24/7/365, as you can see below:
 
