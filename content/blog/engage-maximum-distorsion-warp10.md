@@ -16,6 +16,7 @@ We, at Metrics, are working everyday with [Warp10 Platform](http://warp10.io), a
 [Yes, that's more than **4M datapoints/sec** on our frontends](https://twitter.com/OvhMetrics/status/860792423647203331).
 
 {{< tweet 860791293693317121 >}}
+
 [And more than **5M commits/sec** on HBase, our storage layer](https://twitter.com/OvhMetrics/status/860791293693317121).
 
 Not only Warp10 allows us the reach an unbelievable scalability, it comes with his own language called **WarpScript**, to manipulate and perform heavy time series analysis. Before digging into the need of a new language, let's talk a bit about the need of time series analysis.
