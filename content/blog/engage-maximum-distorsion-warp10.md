@@ -103,13 +103,13 @@ Yes, you'll be able to run that **awesome query that is fetching millions of dat
 
 WarpScript is really easy to code, **because of the stack design**. You'll be **pushing elements into the stack and consume them.**. Coding became logical. First you need to **fetch** your points. Then **applying some downsampling**. Then **aggregate**. These 3 sentences are translated into **3 lines of WarpScript**:
     
-* **FETCH** will push the needed GTS into the stack
-* **BUCKETIZE** will take the GTS from the stack, apply some downsampling, and push the result into the stack 
-* **REDUCE** will take the GTS from the stack, aggregate them, and push them back into the stack
+* **FETCH** will push the needed Geo Time Series into the stack
+* **BUCKETIZE** will take the Geo Time Series from the stack, apply some downsampling, and push the result into the stack 
+* **REDUCE** will take the Geo Time Series from the stack, aggregate them, and push them back into the stack
 
 Debugguing as never be that easy, just use the keyword **STOP** to see the stack at any moment.
 
-## Rich programming QL
+## Rich programming capabilities
 
 WarpScript is coming with more than **800 functions**, ready to use. Things like **Patterns detections, outliers, rolling average, FFT, IDWT** are built-in.
 
