@@ -8,7 +8,7 @@ description: "Why Warp10 and WarpScript are the best tools to analyze time serie
 draft: true
 ---
 
-We, at Metrics, are working everyday with [Warp10 Platform](http://warp10.io), an open source Time Series database. You may not know it because it's not as famous as [Prometheus](https://prometheus.io/) or [InfluxDB](https://docs.influxdata.com/influxdb/), but Warp10 is the most **powerful and generic solution** to store and analyze sensor data. It's the **core** of Metrics, and many internal teams from OVH are using us to monitor their infrastructure. As a result, we are handling a pretty nice traffic 24/7/365, as you can see below:
+We, at [Metrics Data Platform](https://www.ovh.com/fr/data-platforms/metrics/), are working everyday with [Warp10 Platform](http://warp10.io), an open source Time Series database. You may not know it because it's not as famous as [Prometheus](https://prometheus.io/) or [InfluxDB](https://docs.influxdata.com/influxdb/), but Warp10 is the most **powerful and generic solution** to store and analyze sensor data. It's the **core** of Metrics, and many internal teams from OVH are using us to monitor their infrastructure. As a result, we are handling a pretty nice traffic 24/7/365, as you can see below:
 
 
 {{< tweet 860792423647203331 >}}
@@ -58,7 +58,7 @@ But storage, retrieval and analysis of time series cannot be done through standa
 - **query scalability**, ie. how to query in a raisonnable amount of time.
 - **delete capability**, ie. how to handle deletes without stopping ingestion and query.
 
-Frustration with existing open source monitoring tools like **Nagios** and **Ganglia** is why the giants created their own tools – **Google has Borgmon** and **Facebook has Claspin**, just to name two. They are closed sources, but the idea of treating time-series data as a data source for generating alerts is now accessible to everyone thanks to the **former Googlers who decided to rewrite Borgmon** outside Google.
+Frustration with existing open source monitoring tools like **Nagios** and **Ganglia** is why the giants created their own tools – **Google has Borgmon** and **Facebook has [Gorilla](http://www.vldb.org/pvldb/vol8/p1816-teller.pdf)**, just to name two. They are closed sources, but the idea of treating time-series data as a data source for generating alerts is now accessible to everyone thanks to the **former Googlers who decided to rewrite Borgmon** outside Google.
 
 
 # Why another time series database?
@@ -111,7 +111,7 @@ Debugguing as never be that easy, just use the keyword **STOP** to see the stack
 
 ## Rich programming capabilities
 
-WarpScript is coming with more than **800 functions**, ready to use. Things like **Patterns detections, outliers, rolling average, FFT, IDWT** are built-in.
+WarpScript is coming with more than **800 functions**, ready to use. Things like **Patterns and outliers detections, rolling average, FFT, IDWT** are built-in.
 
 ## Geo-Fencing capabilities
 
@@ -165,3 +165,4 @@ Thanks for reading, here's a nice list of additionnals informations about the ti
 * [Warp10 official documentation](http://warp10.io)
 * [Presentation of the Warp 10 Time Series Platform at the 42 US school in Fremont](https://www.youtube.com/watch?v=mNkfBR9KofY) 
 * [Warp10 Google Groups](https://groups.google.com/forum/#!forum/warp10-users)
+* [Metrics Data Platform](https://www.ovh.com/fr/data-platforms/metrics/) OVH's managed time-series platform
