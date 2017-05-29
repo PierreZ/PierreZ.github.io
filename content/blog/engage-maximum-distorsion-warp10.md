@@ -8,9 +8,9 @@ description: "Why Warp10 and WarpScript are the best tools to analyze time serie
 draft: true
 ---
 
-![image](/img/engage-maximum-distorsion-warp10/warp10.png)
+[![image](/img/engage-maximum-distorsion-warp10/warp10.png)](http://www.warp10.io)
 
-We, at [Metrics Data Platform](https://www.ovh.com/fr/data-platforms/metrics/), are working everyday with [Warp10 Platform](http://warp10.io), an open source Time Series database. You may not know it because it's not as famous as [Prometheus](https://prometheus.io/) or [InfluxDB](https://docs.influxdata.com/influxdb/), but Warp10 is the most **powerful and generic solution** to store and analyze sensor data. It's the **core** of Metrics, and many internal teams from OVH are using us to monitor their infrastructure. As a result, we are handling a pretty nice traffic 24/7/365, as you can see below:
+We, at [Metrics Data Platform](https://www.ovh.com/fr/data-platforms/metrics/), are working everyday with [Warp10 Platform](http://www.warp10.io), an open source Time Series database. You may not know it because it's not as famous as [Prometheus](https://prometheus.io/) or [InfluxDB](https://docs.influxdata.com/influxdb/), but Warp10 is the most **powerful and generic solution** to store and analyze sensor data. It's the **core** of Metrics, and many internal teams from OVH are using us to monitor their infrastructure. As a result, we are handling a pretty nice traffic 24/7/365, as you can see below:
 
 
 {{< tweet 860792423647203331 >}}
