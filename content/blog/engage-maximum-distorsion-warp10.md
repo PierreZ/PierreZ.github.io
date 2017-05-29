@@ -8,6 +8,8 @@ description: "Why Warp10 and WarpScript are the best tools to analyze time serie
 draft: true
 ---
 
+![image](/img/engage-maximum-distorsion-warp10/warp10.png)
+
 We, at [Metrics Data Platform](https://www.ovh.com/fr/data-platforms/metrics/), are working everyday with [Warp10 Platform](http://warp10.io), an open source Time Series database. You may not know it because it's not as famous as [Prometheus](https://prometheus.io/) or [InfluxDB](https://docs.influxdata.com/influxdb/), but Warp10 is the most **powerful and generic solution** to store and analyze sensor data. It's the **core** of Metrics, and many internal teams from OVH are using us to monitor their infrastructure. As a result, we are handling a pretty nice traffic 24/7/365, as you can see below:
 
 
@@ -131,7 +133,7 @@ Here's an example of a simple but advanced query:
 
 [ SWAP bucketizer.max	0 1 m 0 ] BUCKETIZE     // Get max value for each minute
 
-[ SWAP mapper.round 0 0 0 ] MAP  		// Round to nearest decimal
+[ SWAP mapper.round 0 0 0 ] MAP  		// Round to nearest long
 
 [ SWAP [ 'buildingID' ] reducer.max ] REDUCE    // aggregate according to labels 
 ```
@@ -140,16 +142,34 @@ Have you guessed the goal? The result will **display the temperature from now to
 
 # What about a more complex example?
 
-you're still here? Good, let's have a more complex example. Let's say that I want to do some patterns recognition. With WarpScript, it's only a 2 functions calls:
+you're still here? Good, let's have a more complex example. Let's say that I want to do some patterns recognition. Let's take an example. Here's a cosinus with an increasing amplitude:
+
+![image](/img/engage-maximum-distorsion-warp10/pattern.png)
+
+I want to **detect the green part** of the time series, because I know that my service is crashing when I have that kind of load. With WarpScript, it's only a **2 functions calls**:
 
 * **PATTERNS** is generating a list of motifs.
 * **PATTERNDETECTION** is running the list of motifs on all the time series you have.
 
-Let's take an example. Here's a cosinus with an increasing amplitude:
+Here's the code
 
-![image](/img/engage-maximum-distorsion-warp10/pattern.png)
+```warpscript
+// defining some variables
+32 'windowSize' STORE
+8 'patternLength' STORE
+16 'quantizationScale' STORE
 
-I want to **detect the green part** of the time series, because I know that my service is crashing when I have that kind of load. Let's call **PATTERNS** and **PATTERNDETECTION** and see the result! 
+// Generate patterns 
+$pattern.to.detect 0 GET 
+$windowSize $patternLength $quantizationScale PATTERNS
+VALUES 'patterns' STORE
+
+// Running the patterns through a list of GTS
+$list.of.gts $patterns 
+$windowSize $patternLength $quantizationScale  PATTERNDETECTION 
+```
+
+Here's the result:
 
 ![image](/img/engage-maximum-distorsion-warp10/patterns.png)
 
