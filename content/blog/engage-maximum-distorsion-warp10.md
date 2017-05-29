@@ -161,7 +161,7 @@ As you can see, **PATTERNDETECTION** is working even with the increasing amplitu
 
 Thanks for reading, here's a nice list of additionnals informations about the time series subject and Warp10:
 
-* [War10 tour](http://tour.warp10.io), similar to "The Go Tour"
+* [Warp10 tour](http://tour.warp10.io), similar to "The Go Tour"
 * [Warp10 official documentation](http://warp10.io)
 * [Presentation of the Warp 10 Time Series Platform at the 42 US school in Fremont](https://www.youtube.com/watch?v=mNkfBR9KofY) 
 * [Warp10 Google Groups](https://groups.google.com/forum/#!forum/warp10-users)
